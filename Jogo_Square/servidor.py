@@ -56,9 +56,5 @@ while True:
     print "enviando ", connected
     print "Rodou a thread"
 
-    conn.send(pickle.dumps(connected))
-    print "enviando ", connected
-    print "Rodou a thread"
-
     start_new_thread(clientthread, (conn, List_connection))
     connected += 2
