@@ -74,22 +74,18 @@ def desenha_quadrados(quadrado, screen):
     rect = quadrado.draw_on(screen)
     return rect
 
-
 def colissao_quadrados(quadrado1, quadrado2):
     if quadrado1.colliderect(quadrado2):
         return True
     return False
 
-
 def criar_jogador(cor):
     jogador = Square([setup.LARGURA / 2, setup.ALTURA - 10], setup.CORES[cor])
     return jogador
 
-
 def desenhar_jogador(jogador, tela):
     rect = jogador.draw_on(tela)
     return rect
-
 
 def inicializar_som():
     sound = pygame.mixer.Sound("boom_pack/Coin 3.wav")
@@ -97,7 +93,6 @@ def inicializar_som():
     sound2 = pygame.mixer.Sound("boom_pack/Hit 5.wav")
     sound2.set_volume(0.1)
     return sound, sound2
-
 
 def quadrado_collissao(lista_square, screen, player1, player2):
     sound, sound2 = inicializar_som()
@@ -124,15 +119,10 @@ def quadrado_collissao(lista_square, screen, player1, player2):
                 qua.position[1] += 40
                 setup.SCORE2 -= 1
 
-
 def time_jogo():
     setup.TIME += 1
     if setup.TIME >= 100:
         setup.count4 = setup.TIME / 100
-    # print setup.count4
-    # if setup.count4 == 5:
-    #     exit()
-
 
 def atualizarQuadrados(quadrados):
     for i in quadrados:
@@ -148,7 +138,6 @@ def desenhar_t1_t2_tm(screen):
     screen.blit(texto1, (0, 10))
     screen.blit(texto2, (setup.LARGURA - 250, 10))
     screen.blit(time, ((setup.LARGURA / 2) - 50, (setup.ALTURA / 2) - 290))
-
 
 def movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2):
     if player == -1:
