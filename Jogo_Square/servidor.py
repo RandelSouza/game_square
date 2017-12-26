@@ -26,9 +26,8 @@ def clientthread(conn, List_connection):
 
     try:
         while True:
-            print 'já chegou aqui'
             data = pickle.loads(conn.recv(512))
-            print data
+            
             if not data:
                 break
 
@@ -36,10 +35,8 @@ def clientthread(conn, List_connection):
                 if i != conn:
                     i.send(pickle.dumps(data))
 
-
     except Exception:
         print traceback.format_exc(), " error"
-
 
 List_connection = []
 connected = -1
@@ -49,12 +46,11 @@ while True:
     print "Aceitou a conexão"
 
     List_connection.append(conn)
-    print len(List_connection), ' tamanho da lista'
-    print "Adicionou conexão"
+    print "Adicionou a conexão"
 
     conn.send(pickle.dumps(connected))
     print "enviando ", connected
-    print "Rodou a thread"
 
     start_new_thread(clientthread, (conn, List_connection))
+    print "Rodou a thread"
     connected += 2
