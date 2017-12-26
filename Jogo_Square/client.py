@@ -3,7 +3,6 @@ from socket import *
 class Cliente(object):
     def __init__(self):
         self.serverName = "localhost"
-   #     self.serverName = "192.168.0.110"
         self.serverPort = 8888
         self.clientSocket = socket(AF_INET, SOCK_STREAM)
         self.clientSocket.connect((self.serverName, self.serverPort))
