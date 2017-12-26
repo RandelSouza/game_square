@@ -7,8 +7,6 @@ import setup
 background, backgroundRect, screen, q, jogador1, jogador2 = funcoes.iniciar()
 a = True
 
-print background, backgroundRect, screen, q, jogador1, jogador2
-
 while setup.RUNNING:
     funcoes.exit_game()
 
