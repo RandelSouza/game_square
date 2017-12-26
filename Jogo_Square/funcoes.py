@@ -6,7 +6,6 @@ cliente = client.Cliente()
 
 global player
 player = pickle.loads(cliente.recieve_message())
-print player
 
 def draw_centered(surface1, surface2, position):
     rect = surface1.get_rect()
@@ -141,16 +140,13 @@ def desenhar_t1_t2_tm(screen):
 
 def movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2):
     if player == -1:
-        print 'ta no -1'
         movimentar_squares1(jogador1, jogador2, tecla_pressionada, 10)
 
     if player == 1:
-        print 'ta no 1'
         movimentar_squares2(jogador1, jogador2, tecla_pressionada, 10)
 
     player1 = desenhar_jogador(jogador1, screen)
     player2 = desenhar_jogador(jogador2, screen)
-
     return player1, player2
 
 def criar_jogadores():
@@ -162,7 +158,7 @@ def exit_game():
     for evento in pygame.event.get():
         if evento.type == QUIT:
             exit()
-
+            
 def iniciar():
     pygame.init()
     pygame.mixer.init()
