@@ -1,1 +1,1 @@
-# game_square jogo teste na versão 1.0
+# game_square jogo teste versão 1.0
