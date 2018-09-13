@@ -11,5 +11,5 @@ class Cliente(object):
         self.clientSocket.send(string)
 
     def recieve_message(self):
-        resposta = self.clientSocket.recv(1024)
-        return resposta
+        return self.clientSocket.recv(1024)
+        
