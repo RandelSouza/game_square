@@ -1,12 +1,12 @@
 # -*- coding:UTF-8 -*-
 # Classe Servidora
+# Estruturar em OO
 
 import socket, setup
 import pickle
 import sys
 from thread import *
 import traceback
-
 
 HOST = ''
 PORT = 8888
