@@ -1,9 +1,12 @@
 # -*- coding:UTF-8 -*-
+# Classe Servidora
+
 import socket, setup
 import pickle
 import sys
 from thread import *
 import traceback
+
 
 HOST = ''
 PORT = 8888
@@ -27,7 +30,7 @@ def clientthread(conn, List_connection):
     try:
         while True:
             data = pickle.loads(conn.recv(512))
-            
+
             if not data:
                 break
 
