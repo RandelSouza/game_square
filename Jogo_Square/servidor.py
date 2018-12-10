@@ -32,18 +32,21 @@ class servidor(object):
         except Exception:
             print traceback.format_exc(), " error"
 
-server = servidor()
+    #Função principal responsavel por executar o servidor
+    def main(self):
+        while True:
+            conn, addr = self.s.accept()
+            print "Aceitou a conexão"
 
-while True:
-    conn, addr = server.s.accept()
-    print "Aceitou a conexão"
+            self.List_connection.append(conn)
+            print "Adicionou a conexão"
 
-    server.List_connection.append(conn)
-    print "Adicionou a conexão"
+            conn.send(pickle.dumps(self.connected))
+            print "enviando ", self.connected
 
-    conn.send(pickle.dumps(server.connected))
-    print "enviando ", server.connected
+            start_new_thread(self.clientthread, (conn, self.List_connection))
+            print "Rodou a thread"
+            self.connected += 2
 
-    start_new_thread(server.clientthread, (conn, server.List_connection))
-    print "Rodou a thread"
-    server.connected += 2
+# Chamando o método principal da classe Servidor
+servidor().main()
