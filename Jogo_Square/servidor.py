@@ -8,52 +8,42 @@ import sys
 from thread import *
 import traceback
 
-HOST = ''
-PORT = 8888
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.settimeout(None)
+class servidor(object):
+    def __init__(self):
+        self.HOST = ''
+        self.PORT = 8889
+        self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.s.settimeout(None)
+        self.s.bind((self.HOST, self.PORT))
+        self.s.listen(2)
+        self.List_connection = []
+        self.connected = -1
 
-print "Criou o socket servidor"
+    def clientthread(self, conn, List_connection):
+        try:
+            while True:
+                data = pickle.loads(conn.recv(512))
 
-try:
-    s.bind((HOST, PORT))
-except socket.error as msg:
-    print 'Bind failed. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
-    sys.exit()
+                if not data:
+                    break
+                for i in List_connection:
+                    if i != conn:
+                        i.send(pickle.dumps(data))
+        except Exception:
+            print traceback.format_exc(), " error"
 
-s.listen(2)
-
-print "Esperando duas conexões"
-
-def clientthread(conn, List_connection):
-
-    try:
-        while True:
-            data = pickle.loads(conn.recv(512))
-
-            if not data:
-                break
-
-            for i in List_connection:
-                if i != conn:
-                    i.send(pickle.dumps(data))
-
-    except Exception:
-        print traceback.format_exc(), " error"
-
-List_connection = []
-connected = -1
+server = servidor()
 
 while True:
-    conn, addr = s.accept()
+    conn, addr = server.s.accept()
     print "Aceitou a conexão"
 
-    List_connection.append(conn)
+    server.List_connection.append(conn)
     print "Adicionou a conexão"
 
-    conn.send(pickle.dumps(connected))
-    print "enviando ", connected
+    conn.send(pickle.dumps(server.connected))
+    print "enviando ", server.connected
 
-    start_new_thread(clientthread, (conn, List_connection))
+    start_new_thread(server.clientthread, (conn, server.List_connection))
     print "Rodou a thread"
-    connected += 2
+    server.connected += 2
