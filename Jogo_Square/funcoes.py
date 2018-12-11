@@ -7,6 +7,8 @@ cliente = client.Cliente()
 global player
 player = pickle.loads(cliente.recieve_message())
 
+random.seed(pickle.loads(cliente.recieve_message()))
+
 def draw_centered(surface1, surface2, position):
     rect = surface1.get_rect()
     rect = rect.move(position[0] - rect.width / 2, position[1] - rect.height / 2)
@@ -158,7 +160,7 @@ def exit_game():
     for evento in pygame.event.get():
         if evento.type == QUIT:
             exit()
-            
+
 def iniciar():
     pygame.init()
     pygame.mixer.init()

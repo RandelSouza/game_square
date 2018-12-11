@@ -3,7 +3,7 @@
 # Estruturar em OO
 
 import socket, setup
-import pickle
+import pickle, random
 import sys
 from thread import *
 import traceback
@@ -34,6 +34,7 @@ class servidor(object):
 
     #Função principal responsavel por executar o servidor
     def main(self):
+        aleatorio = random.randint(1, 2000)
         while True:
             conn, addr = self.s.accept()
             print "Aceitou a conexão"
@@ -43,6 +44,11 @@ class servidor(object):
 
             conn.send(pickle.dumps(self.connected))
             print "enviando ", self.connected
+
+            conn.send(pickle.dumps(aleatorio))
+            print "enviando número aleatorio", aleatorio
+
+            conn.send(pickle.dumps(self.connected))
 
             start_new_thread(self.clientthread, (conn, self.List_connection))
             print "Rodou a thread"

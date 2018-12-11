@@ -1,6 +1,6 @@
 # -*- coding:UTF-8 -*-
 
-import pygame
+import pygame, random
 import funcoes
 import setup
 
