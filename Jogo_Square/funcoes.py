@@ -3,11 +3,12 @@ from pygame.locals import *
 
 global cliente
 cliente = client.Cliente()
+random.seed(3)
 
 global player
 player = pickle.loads(cliente.recieve_message())
 
-random.seed(pickle.loads(cliente.recieve_message()))
+#random.seed(int(pickle.loads(cliente.recieve_message())))
 
 def draw_centered(surface1, surface2, position):
     rect = surface1.get_rect()

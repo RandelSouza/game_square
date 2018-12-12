@@ -23,7 +23,6 @@ class servidor(object):
         try:
             while True:
                 data = pickle.loads(conn.recv(512))
-
                 if not data:
                     break
                 for i in List_connection:
@@ -45,10 +44,11 @@ class servidor(object):
             conn.send(pickle.dumps(self.connected))
             print "enviando ", self.connected
 
-            conn.send(pickle.dumps(aleatorio))
-            print "enviando número aleatorio", aleatorio
+#            if self.connected == -1 or self.connected == 1:
+#            conn.send(pickle.dumps(aleatorio))
+#                print "enviando número aleatorio", aleatorio
 
-            conn.send(pickle.dumps(self.connected))
+            #conn.send(pickle.dumps(self.connected))
 
             start_new_thread(self.clientthread, (conn, self.List_connection))
             print "Rodou a thread"
