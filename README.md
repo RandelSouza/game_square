@@ -7,6 +7,7 @@
 # Baixando e Executando o Jogo
 * Para baixar o Game Square pelo terminal: </br>
 `git clone https://github.com/RandelSouza/game_square.git`
-* Para baixar pelo site, na tela inicial do repositorio clique em:
+* Para baixar pelo site, na tela inicial do repositorio clique em **Donwload zip:
+![alt text]()
 
 
