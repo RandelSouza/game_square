@@ -20,3 +20,6 @@ O jogo não está completo e apresenta diversas inconsistencias e bugs!
 aplicação **main.py** em outro terminal: </br>
 `python main.py`</br>
 **obs**: *será necessário executar o código acima (da aplicação) em dois terminais*
+![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gameSquareTerminal.png)
+
+* Imagens do jogo em execução:
