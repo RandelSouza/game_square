@@ -18,6 +18,6 @@ O jogo não está completo e apresenta diversas inconsistencias e bugs!
 `python servidor.py`
 * Com o servidor pronto para receber e tratar as conexões, execute o código da
 aplicação **main.py** em outro terminal: </br>
-`python main`</br>
+`python main.py`</br>
 **obs**: *será necessário executar o códifo acima em dois terminais*
 
