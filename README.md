@@ -19,5 +19,4 @@ O jogo não está completo e apresenta diversas inconsistencias e bugs!
 * Com o servidor pronto para receber e tratar as conexões, execute o código da
 aplicação **main.py** em outro terminal: </br>
 `python main.py`</br>
-**obs**: *será necessário executar o código acima em dois terminais*
-
+**obs**: *será necessário executar o código acima (da aplicação) em dois terminais*
