@@ -12,5 +12,12 @@ O jogo não está completo e apresenta diversas inconsistencias e bugs!
 `git clone https://github.com/RandelSouza/game_square.git`
 * Para baixar pelo site, na tela inicial do repositorio clique em **Download ZIP**: </br>
 ![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gitgamesquare.png)
-
+* Entrando na pasta onde reside a aplicação (main) e o servidor: </br>
+`cd game_square/Jogo_Square/`
+* Antes de executar as aplicações, é necessário inicializar o código servidor: </br>
+`python servidor.py`
+* Com o servidor pronto para receber e tratar as conexões, execute o código da
+aplicação **main.py** em outro terminal: </br>
+`python main`</br>
+**obs**: *será necessário executar o códifo acima em dois terminais*
 
