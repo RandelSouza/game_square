@@ -44,15 +44,8 @@ class servidor(object):
             conn.send(pickle.dumps(self.connected))
             print "enviando ", self.connected
 
-#            if self.connected == -1 or self.connected == 1:
-#            conn.send(pickle.dumps(aleatorio))
-#                print "enviando número aleatorio", aleatorio
-
-            #conn.send(pickle.dumps(self.connected))
-
             start_new_thread(self.clientthread, (conn, self.List_connection))
             print "Rodou a thread"
             self.connected += 2
 
-# Chamando o método principal da classe Servidor
 servidor().main()
