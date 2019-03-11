@@ -23,3 +23,5 @@ aplicação **main.py** em outro terminal: </br>
 ![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gameSquareTerminal.png)
 
 * Imagens do jogo em execução:
+![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gameRun.png)
+![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gameRun2.png)
