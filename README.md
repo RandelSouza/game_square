@@ -1,4 +1,7 @@
 # Game Square
+Game Square foi criado para o Trabalho Final da Disciplina Serviços de Rede.
+Utilizando-se do paradigma cliente-servidor para a troca de informações em rede.
+O jogo não está completo e apresenta diversas inconsistencias e bugs!
 
 # Requisitos
 * A linguagem Python instalada.
