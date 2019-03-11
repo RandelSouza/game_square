@@ -48,11 +48,18 @@ def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
     cliente.send_message(pickle.dumps(quadrado1.position))
     quadrado2.position = pickle.loads(cliente.recieve_message())
 
+def moveRight():
+    quadrado2.position[0] += velocidade
+
+def moveLeft():
+    quadrado2.position[0] -= velocidade
+
 def movimentar_squares2(quadrado1, quadrado2,  tecla_pressionada, velocidade):
     if tecla_pressionada[pygame.K_LEFT]:
-        quadrado2.position[0] -= velocidade
+        moveLeft()
     if tecla_pressionada[pygame.K_RIGHT]:
-        quadrado2.position[0] += velocidade
+        moveRight()
+        
     if quadrado2.position[0] == 0:
         quadrado2.position[0] += 10
     if quadrado2.position[0] == setup.LARGURA:
