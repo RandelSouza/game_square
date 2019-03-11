@@ -51,7 +51,7 @@ def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
 def moveRight(quadrado):
     quadrado.position[0] += velocidade
 
-def moveLeft():
+def moveLeft(quadrado):
     quadrado.position[0] -= velocidade
 
 def movimentar_squares2(quadrado1, quadrado2,  tecla_pressionada, velocidade):
