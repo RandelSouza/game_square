@@ -7,3 +7,7 @@ class Square(object):
         self.position = list(position[:])
         self.speed = speed
         self.cor = cor
+
+    def draw_on(self, screen):
+        rect = draw_centered(self.image, screen, self.position)
+        return rect
