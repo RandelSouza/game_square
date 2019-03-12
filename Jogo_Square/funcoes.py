@@ -14,7 +14,7 @@ def draw_centered(surface1, surface2, position):
     surface2.blit(surface1, rect)
     return rect
 
-class Square(object):
+'''class Square(object):
     def __init__(self, position, image, speed=1, cor=None):
         print position
         self.image = image
@@ -34,7 +34,7 @@ class Square(object):
 
     def set_cor(self, cor):
         self.cor = cor
-
+'''
 def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
     if tecla_pressionada[pygame.K_LEFT]:
         moveLeft(quadrado1, velocidade)
