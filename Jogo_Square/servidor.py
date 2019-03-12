@@ -1,6 +1,4 @@
 # -*- coding:UTF-8 -*-
-# Classe Servidora
-# Estruturar em OO
 
 import socket, setup
 import pickle, random
