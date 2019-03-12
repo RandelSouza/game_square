@@ -1,6 +1,6 @@
-import random, pygame, time, setup, pickle, client, Square
+import random, pygame, time, setup, pickle, client
 from pygame.locals import *
-
+from Square import *
 global cliente
 cliente = client.Cliente()
 random.seed(3)
@@ -8,12 +8,17 @@ random.seed(3)
 global player
 player = pickle.loads(cliente.recieve_message())
 
+'''
 def draw_centered(surface1, surface2, position):
     rect = surface1.get_rect()
     rect = rect.move(position[0] - rect.width / 2, position[1] - rect.height / 2)
     surface2.blit(surface1, rect)
     return rect
 
+def draw_on(self, screen):
+    rect = draw_centered(self.image, screen, self.position)
+    return rect
+'''
 '''class Square(object):
     def __init__(self, position, image, speed=1, cor=None):
         print position

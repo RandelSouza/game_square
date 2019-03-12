@@ -8,8 +8,14 @@ class Square(object):
         self.speed = speed
         self.cor = cor
 
+    def draw_centered(self, surface1, surface2, position):
+        rect = surface1.get_rect()
+        rect = rect.move(position[0] - rect.width / 2, position[1] - rect.height / 2)
+        surface2.blit(surface1, rect)
+        return rect
+
     def draw_on(self, screen):
-        rect = draw_centered(self.image, screen, self.position)
+        rect = self.draw_centered(self.image, screen, self.position)
         return rect
 
     # change name method before

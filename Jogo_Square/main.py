@@ -3,7 +3,6 @@
 import pygame, random
 import funcoes
 import setup
-
 background, backgroundRect, screen, q, jogador1, jogador2 = funcoes.iniciar()
 a = True
 

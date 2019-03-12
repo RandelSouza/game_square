@@ -15,5 +15,3 @@ VERDE = pygame.image.load("Imagens/dngn_green_crystal_wall.png")
 VERMELHO = pygame.image.load("Imagens/dngn_red_crystal_wall.png")
 CORES = [VERDE, VERMELHO]
 RUNNING = True
-
-
