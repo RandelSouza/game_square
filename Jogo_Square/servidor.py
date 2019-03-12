@@ -29,7 +29,7 @@ class servidor(object):
         except Exception:
             print traceback.format_exc(), " error"
 
-    #Função principal responsavel por executar o servidor
+    #Main Function
     def main(self):
         aleatorio = random.randint(1, 2000)
         while True:
