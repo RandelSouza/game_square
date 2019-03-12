@@ -11,3 +11,6 @@ class Square(object):
     def draw_on(self, screen):
         rect = draw_centered(self.image, screen, self.position)
         return rect
+
+    def movimentar(self, velocidade):
+        self.position[1] += velocidade
