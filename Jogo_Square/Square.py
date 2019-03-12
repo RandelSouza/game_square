@@ -18,3 +18,6 @@ class Square(object):
 
     def get_cor(self):
         return self.cor
+
+    def set_cor(self, cor):
+        self.cor = cor
