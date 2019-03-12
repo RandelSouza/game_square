@@ -1,4 +1,4 @@
-import random, pygame, time, setup, pickle, client
+import random, pygame, time, setup, pickle, client, Square
 from pygame.locals import *
 
 global cliente
