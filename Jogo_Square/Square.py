@@ -15,3 +15,6 @@ class Square(object):
     # change name method before
     def movimentar(self, velocidade):
         self.position[1] += velocidade
+
+    def get_cor(self):
+        return self.cor
