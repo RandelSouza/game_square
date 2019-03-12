@@ -19,27 +19,6 @@ def draw_on(self, screen):
     rect = draw_centered(self.image, screen, self.position)
     return rect
 '''
-'''class Square(object):
-    def __init__(self, position, image, speed=1, cor=None):
-        print position
-        self.image = image
-        self.position = list(position[:])
-        self.speed = speed
-        self.cor = cor
-
-    def draw_on(self, screen):
-        rect = draw_centered(self.image, screen, self.position)
-        return rect
-
-    def movimentar(self, velocidade):
-        self.position[1] += velocidade
-
-    def get_cor(self):
-        return self.cor
-
-    def set_cor(self, cor):
-        self.cor = cor
-'''
 def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
     if tecla_pressionada[pygame.K_LEFT]:
         moveLeft(quadrado1, velocidade)
