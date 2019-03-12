@@ -14,11 +14,8 @@ def draw_centered(surface1, surface2, position):
     rect = rect.move(position[0] - rect.width / 2, position[1] - rect.height / 2)
     surface2.blit(surface1, rect)
     return rect
-
-def draw_on(self, screen):
-    rect = draw_centered(self.image, screen, self.position)
-    return rect
 '''
+
 def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
     if tecla_pressionada[pygame.K_LEFT]:
         moveLeft(quadrado1, velocidade)
