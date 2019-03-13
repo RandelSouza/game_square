@@ -7,6 +7,7 @@ background, backgroundRect, screen, listSquare, jogador1, jogador2 = funcoes.ini
 
 while setup.RUNNING:
     funcoes.exit_game()
+    pygame.display.update()
 
     while setup.RUNNING2:
         tecla_pressionada = pygame.key.get_pressed()
@@ -15,6 +16,8 @@ while setup.RUNNING:
         screen.blit(background, backgroundRect)
         funcoes.desenhar_t1_t2_tm(screen)
         setup.RUNNING2 = funcoes.time_jogo()
+        #if not setup.RUNNING2:
+        #    break
         listSquare = funcoes.atualizarQuadrados(listSquare)
         player1, player2 = funcoes.movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2)
         funcoes.quadrado_collissao(listSquare, screen, player1, player2)
