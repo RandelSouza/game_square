@@ -8,7 +8,7 @@ background, backgroundRect, screen, listSquare, jogador1, jogador2 = funcoes.ini
 while setup.RUNNING:
     funcoes.exit_game()
 
-    while True:
+    while setup.RUNNING2:
         tecla_pressionada = pygame.key.get_pressed()
         funcoes.exit_game()
         setup.clock.tick(60)
