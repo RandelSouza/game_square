@@ -14,8 +14,7 @@ def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
         moveLeft(quadrado1, velocidade)
     if tecla_pressionada[pygame.K_RIGHT]:
         moveRight(quadrado1, velocidade)
-    '''if quadrado1.position[0] == 0:
-        quadrado1.position[0] += 10
+    '''
     if quadrado1.position[0] == setup.LARGURA:
         quadrado1.position[0] -= 10
     '''
