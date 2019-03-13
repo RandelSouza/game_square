@@ -160,4 +160,4 @@ def iniciar():
     pygame.display.set_caption('Square')
     listSquare =  criar_quadrados(random.randint(1,60))
     jogador1, jogador2 = criar_jogadores()
-    return background, backgroundRect, screen, q, jogador1, jogador2
+    return background, backgroundRect, screen, listSquare, jogador1, jogador2
