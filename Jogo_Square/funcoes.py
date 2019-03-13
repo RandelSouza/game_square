@@ -2,6 +2,7 @@ import random, pygame, time, setup, pickle, client
 from pygame.locals import *
 from Square import *
 global cliente
+
 cliente = client.Cliente()
 random.seed(3)
 
@@ -13,13 +14,21 @@ def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
         moveLeft(quadrado1, velocidade)
     if tecla_pressionada[pygame.K_RIGHT]:
         moveRight(quadrado1, velocidade)
-    if quadrado1.position[0] == 0:
+    '''if quadrado1.position[0] == 0:
         quadrado1.position[0] += 10
     if quadrado1.position[0] == setup.LARGURA:
         quadrado1.position[0] -= 10
+    '''
+    limitScreen(quadrado1)
 
     cliente.send_message(pickle.dumps(quadrado1.position))
     quadrado2.position = pickle.loads(cliente.recieve_message())
+
+def limitScreen(square):
+    if square.position[0] == 0:
+        square.position[0] += 10
+    if square.position[0] == setup.LARGURA:
+        square.position[0] -= 10
 
 def moveRight(quadrado, velocidade):
     quadrado.position[0] += velocidade
@@ -32,12 +41,13 @@ def movimentar_squares2(quadrado1, quadrado2,  tecla_pressionada, velocidade):
         moveLeft(quadrado2, velocidade)
     if tecla_pressionada[pygame.K_RIGHT]:
         moveRight(quadrado2, velocidade)
-
+    '''
     if quadrado2.position[0] == 0:
         quadrado2.position[0] += 10
     if quadrado2.position[0] == setup.LARGURA:
         quadrado2.position[0] -= 10
-
+    '''
+    limitScreen(quadrado2)
     cliente.send_message(pickle.dumps(quadrado2.position))
     quadrado1.position = pickle.loads(cliente.recieve_message())
 
@@ -110,6 +120,7 @@ def atualizarQuadrados(quadrados):
             quadrados = criar_quadrados(random.randint(1, 60))
         i.position[1] += 1
     return quadrados
+
 
 def desenhar_t1_t2_tm(screen):
     time = setup.fuente.render(str(setup.count4), 100, (0, 0, 0))
