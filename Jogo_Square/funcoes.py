@@ -14,7 +14,7 @@ def movimentar_squares1(quadrado1, quadrado2,  tecla_pressionada, velocidade):
         moveLeft(quadrado1, velocidade)
     if tecla_pressionada[pygame.K_RIGHT]:
         moveRight(quadrado1, velocidade)
-            
+
     limitScreen(quadrado1)
 
     cliente.send_message(pickle.dumps(quadrado1.position))
@@ -101,8 +101,12 @@ def quadrado_collissao(lista_square, screen, player1, player2):
                 qua.position[1] += 40
                 setup.SCORE2 -= 1
 
-def time_jogo():
+def incrementTime():
     setup.TIME += 1
+
+def time_jogo():
+    incrementTime()
+    
     if setup.TIME >= 100:
         setup.count4 = setup.TIME / 100
 
