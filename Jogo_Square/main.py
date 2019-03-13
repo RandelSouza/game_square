@@ -3,7 +3,7 @@
 import pygame, random
 import funcoes
 import setup
-background, backgroundRect, screen, q, jogador1, jogador2 = funcoes.iniciar()
+background, backgroundRect, screen, listSquare, jogador1, jogador2 = funcoes.iniciar()
 
 while setup.RUNNING:
     funcoes.exit_game()
