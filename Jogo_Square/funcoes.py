@@ -104,11 +104,14 @@ def quadrado_collissao(lista_square, screen, player1, player2):
 def incrementTime():
     setup.TIME += 1
 
-def time_jogo():
-    incrementTime()
-    
+def transformTimeSeconds():
     if setup.TIME >= 100:
         setup.count4 = setup.TIME / 100
+        
+def time_jogo():
+    incrementTime()
+
+
 
 def atualizarQuadrados(quadrados):
     for i in quadrados:
