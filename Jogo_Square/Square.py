@@ -18,7 +18,6 @@ class Square(object):
         rect = self.draw_centered(self.image, screen, self.position)
         return rect
 
-    # change name method before
     def movimentar(self, velocidade):
         self.position[1] += velocidade
 
