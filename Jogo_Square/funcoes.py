@@ -107,11 +107,10 @@ def incrementTime():
 def transformTimeSeconds():
     if setup.TIME >= 100:
         setup.count4 = setup.TIME / 100
-        
+
 def time_jogo():
     incrementTime()
-
-
+    transformTimeSeconds()
 
 def atualizarQuadrados(quadrados):
     for i in quadrados:
