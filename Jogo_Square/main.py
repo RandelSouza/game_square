@@ -15,7 +15,7 @@ while setup.RUNNING:
         screen.blit(background, backgroundRect)
         funcoes.desenhar_t1_t2_tm(screen)
         funcoes.time_jogo()
-        q = funcoes.atualizarQuadrados(q)
+        listSquare = funcoes.atualizarQuadrados(q)
         player1, player2 = funcoes.movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2)
         funcoes.quadrado_collissao(q, screen, player1, player2)
         pygame.display.update()
