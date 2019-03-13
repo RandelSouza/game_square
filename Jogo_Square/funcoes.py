@@ -119,7 +119,6 @@ def atualizarQuadrados(quadrados):
         i.position[1] += 1
     return quadrados
 
-
 def desenhar_t1_t2_tm(screen):
     time = setup.fuente.render(str(setup.count4), 100, (0, 0, 0))
     texto1 = setup.fuente.render("Player1: " + str(setup.SCORE1), 100, (0, 255, 0))
@@ -159,6 +158,6 @@ def iniciar():
     backgroundRect = background.get_rect()
     screen = pygame.display.set_mode((setup.LARGURA, setup.ALTURA), 0, 32)
     pygame.display.set_caption('Square')
-    q =  criar_quadrados(random.randint(1,60))
+    listSquare =  criar_quadrados(random.randint(1,60))
     jogador1, jogador2 = criar_jogadores()
     return background, backgroundRect, screen, q, jogador1, jogador2
