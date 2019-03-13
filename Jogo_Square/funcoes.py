@@ -109,7 +109,7 @@ def transformTimeSeconds():
         setup.count4 = setup.TIME / 100
     if setup.TIME == 60:
         return False
-
+    return True
 def time_jogo():
     incrementTime()
     transformTimeSeconds()
