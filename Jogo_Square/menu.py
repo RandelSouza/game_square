@@ -12,4 +12,4 @@ class Menu( object ):
          pygame.font.init()
 
     def drawAndUpdateMenu( self ):
-        pass
+        self.screen.blit( self.background, ( 0, 0 ) )
