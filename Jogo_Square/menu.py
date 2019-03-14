@@ -4,4 +4,4 @@ from pygame.locals import *
 
 class Menu( object ):
      def __init__( self ):
-         pass
+         self.init = pygame.init()
