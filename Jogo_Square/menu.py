@@ -13,3 +13,5 @@ class Menu( object ):
 
     def drawAndUpdateMenu( self ):
         self.screen.blit( self.background, ( 0, 0 ) )
+        self.screen.blit( self.play, [ 300, 300 ] )
+        pygame.display.update()
