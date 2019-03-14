@@ -8,3 +8,4 @@ class Menu( object ):
          self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
          self.background = None # pygame.image.load( "image/menu1.png" ).convert()
          self.fps = pygame.time.Clock().tick( 60 )
+         self.play =  None #pygame.transform.scale( pygame.image.load( "image/play.png" ).convert(), ( 150, 100 ) )
