@@ -7,3 +7,4 @@ class Menu( object ):
          self.init = pygame.init()
          self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
          self.background = None # pygame.image.load( "image/menu1.png" ).convert()
+         self.fps = pygame.time.Clock().tick( 60 )
