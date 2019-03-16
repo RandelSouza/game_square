@@ -81,6 +81,10 @@ def inicializar_som():
 
 
 def deleteSquare(player, square, sound):
+    if qua.get_cor() == 0:
+        sound.play()
+        qua.position[1] += 40
+        setup.SCORE1 += 1
 
 # Deixar legivel
 def quadrado_collissao(lista_square, screen, player1, player2):
