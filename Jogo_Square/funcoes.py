@@ -104,7 +104,7 @@ def quadrado_collissao(lista_square, screen, player1, player2):
             #    qua.position[1] += 40
             #    setup.SCORE1 += 1
             #else:
-                sound2.play()
+            #    sound2.play()
                 qua.position[1] += 40
                 setup.SCORE1 -= 1
 
