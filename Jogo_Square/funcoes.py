@@ -102,10 +102,7 @@ def quadrado_collissao(lista_square, screen, player1, player2):
 
         if colissao_quadrados(player2, quadrado):
             deleteSquare(qua, sound)
-            if qua.get_cor() == 1:
-                sound.play()
-                qua.position[1] += 40
-                setup.SCORE2 += 1
+            
             else:
                 sound2.play()
                 qua.position[1] += 40
