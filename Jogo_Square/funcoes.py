@@ -99,7 +99,7 @@ def quadrado_collissao(lista_square, screen, player1, player2):
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
             # Criar função generica pra isso, muito código repetido
-            if qua.get_cor() == 0:
+            #if qua.get_cor() == 0:
                 sound.play()
                 qua.position[1] += 40
                 setup.SCORE1 += 1
