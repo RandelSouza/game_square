@@ -80,7 +80,7 @@ def inicializar_som():
     return sound, sound2
 
 
-def (square, sound):
+def deleteSquare(square, sound):
     pass
 # Deixar legivel
 def quadrado_collissao(lista_square, screen, player1, player2):
