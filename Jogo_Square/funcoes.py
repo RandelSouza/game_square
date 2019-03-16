@@ -125,7 +125,7 @@ def transformTimeSeconds():
     if setup.TIME >= 100:
         setup.count4 = setup.TIME / 100
     if setup.TIME == 3000:
-        # return False
+         return True
     return True
 
 def time_jogo():
