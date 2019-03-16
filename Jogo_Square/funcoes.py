@@ -101,12 +101,7 @@ def quadrado_collissao(lista_square, screen, player1, player2):
             deleteSquare(qua, sound)
 
         if colissao_quadrados(player2, quadrado):
-            deleteSquare(qua, sound)
-            
-            else:
-                sound2.play()
-                qua.position[1] += 40
-                setup.SCORE2 -= 1
+            deleteSquare(qua, sound)                        
 
 def incrementTime():
     setup.TIME += 1
