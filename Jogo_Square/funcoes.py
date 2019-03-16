@@ -46,6 +46,8 @@ def movimentar_squares2(quadrado1, quadrado2,  tecla_pressionada, velocidade):
 # Deixar mais legivel
 def criar_quadrados(quantidade):
     quadrados = []
+    
+    # Criar função mais generica
     for i in range(quantidade):
         cor = random.randint(0,1)
         square = Square([random.randint(0, setup.LARGURA - 90), 0 - (random.randint(1, 700))], setup.CORES[cor])
