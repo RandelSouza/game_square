@@ -98,12 +98,8 @@ def quadrado_collissao(lista_square, screen, player1, player2):
     for qua in lista_square:
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
-            # Criar funcao generica pra isso, muito codigo repetido
-            #if qua.get_cor() == 0:
-            #    sound.play()
-            #    qua.position[1] += 40
-            #    setup.SCORE1 += 1            
             deleteSquare(qua, sound)
+            
         if colissao_quadrados(player2, quadrado):
             if qua.get_cor() == 1:
                 sound.play()
