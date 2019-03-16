@@ -79,9 +79,11 @@ def inicializar_som():
     sound2.set_volume(0.1)
     return sound, sound2
 
+# Deixar legivel
 def quadrado_collissao(lista_square, screen, player1, player2):
     sound, sound2 = inicializar_som()
 
+    
     for qua in lista_square:
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
