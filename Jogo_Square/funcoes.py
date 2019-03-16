@@ -80,7 +80,7 @@ def inicializar_som():
     return sound, sound2
 
 
-def deleteSquare(player, square, sound):
+def deleteSquare(square, sound):
     if qua.get_cor() == 0:
         sound.play()
         qua.position[1] += 40
