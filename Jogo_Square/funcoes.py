@@ -87,7 +87,7 @@ def deleteSquare(square, sound):
         setup.SCORE1 += 1
     else:
         sound2.play()
-        qua.position[1] += 40
+        square.position[1] += 40
         setup.SCORE1 -= 1
 
 # Deixar legivel
