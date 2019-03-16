@@ -83,7 +83,7 @@ def inicializar_som():
 def deleteSquare(square, sound):
     if square.get_cor() == 0:
         sound.play()
-        qua.position[1] += 40
+        square.position[1] += 40
         setup.SCORE1 += 1
 
 # Deixar legivel
