@@ -98,7 +98,7 @@ def quadrado_collissao(lista_square, screen, player1, player2):
     for qua in lista_square:
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
-            # Criar função generica pra isso, muito código repetido
+            # Criar funcao generica pra isso, muito código repetido
             #if qua.get_cor() == 0:
             #    sound.play()
             #    qua.position[1] += 40
