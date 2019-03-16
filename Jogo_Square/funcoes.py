@@ -46,7 +46,7 @@ def movimentar_squares2(quadrado1, quadrado2,  tecla_pressionada, velocidade):
 # Deixar mais legivel
 def criar_quadrados(quantidade):
     quadrados = []
-    
+
     # Criar função mais generica
     for i in range(quantidade):
         cor = random.randint(0,1)
@@ -79,6 +79,9 @@ def inicializar_som():
     sound2.set_volume(0.1)
     return sound, sound2
 
+
+def (square, sound):
+    pass
 # Deixar legivel
 def quadrado_collissao(lista_square, screen, player1, player2):
     sound, sound2 = inicializar_som()
