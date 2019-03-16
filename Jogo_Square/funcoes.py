@@ -80,7 +80,7 @@ def inicializar_som():
     return sound, sound2
 
 
-def deleteSquare(square, sound):
+def deleteSquare(square, sound, sound2):
     if square.get_cor() == 0:
         sound.play()
         square.position[1] += 40
@@ -98,10 +98,10 @@ def quadrado_collissao(lista_square, screen, player1, player2):
     for qua in lista_square:
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
-            deleteSquare(qua, sound)
+            deleteSquare(qua, sound, sound2)
 
         if colissao_quadrados(player2, quadrado):
-            deleteSquare(qua, sound)                        
+            deleteSquare(qua, sound, sound2)
 
 def incrementTime():
     setup.TIME += 1
