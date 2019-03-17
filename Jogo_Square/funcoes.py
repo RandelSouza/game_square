@@ -97,7 +97,7 @@ def addScore(player):
 
 def removeScore(player):
     if player == 0:
-#        setup.SCORE1 -= 1
+        setup.SCORE1 -= 1
 #    else:
 #        setup.SCORE2 -= 1
 
