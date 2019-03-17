@@ -111,11 +111,6 @@ def deleteSquare(player, square, sound, sound2):
         playSoundAndRemoveSquare(sound2, square)
         removeScore(player)
 
-    '''            
-        if ply2 == False:
-            setup.SCORE2 -= 1
-    '''
-# Deixar legivel
 def quadrado_collissao(lista_square, screen, player1, player2):
     sound, sound2 = inicializar_som()
     # Criar funcao e modificar nome de variaveis
