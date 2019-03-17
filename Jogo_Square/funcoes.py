@@ -80,7 +80,7 @@ def inicializar_som():
     return sound, sound2
 
 def playSound(sound):
-#    sound.play()
+    sound.play()
 
 #def removeSquare(square):
 #    square.position[1] += 40
