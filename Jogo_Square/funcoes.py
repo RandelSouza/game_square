@@ -105,7 +105,7 @@ def deleteSquare(player, square, sound, sound2):
     verify = (square.get_cor() == player)
     print verify
     if verify:
-    #    playSoundAndRemoveSquare(sound, square)
+        playSoundAndRemoveSquare(sound, square)
     #    addScore(player)
     #else:
     #    playSoundAndRemoveSquare(sound2, square)
