@@ -109,7 +109,7 @@ def deleteSquare(player, square, sound, sound2):
         addScore(player)
     else:
         playSoundAndRemoveSquare(sound2, square)
-    #    removeScore(player)
+        removeScore(player)
         '''if player == 0:
             setup.SCORE1 -= 1
         else:
