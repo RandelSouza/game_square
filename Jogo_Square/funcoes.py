@@ -98,7 +98,7 @@ def addScore(player):
 def removeScore(player):
     if player == 0:
         setup.SCORE1 -= 1
-#    else:
+    else:
 #        setup.SCORE2 -= 1
 
 def deleteSquare(player, square, sound, sound2):
