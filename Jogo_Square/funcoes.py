@@ -79,29 +79,71 @@ def inicializar_som():
     sound2.set_volume(0.1)
     return sound, sound2
 
+#def playSound(sound):
+#    sound.play()
 
-def deleteSquare(square, sound, sound2):
-    if square.get_cor() == 0:
+#def removeSquare(square):
+#    square.position[1] += 40
+
+#def playSoundAndRemoveSquare(sound, square):
+#    playSound(sound)
+#    removeSquare(square)
+
+#def addScore(player):
+#    if player == 0:
+#        setup.SCORE1 += 1
+#    else:
+#        setup.SCORE2 += 1
+
+#def removeScore(player):
+#    if player == 0:
+#        setup.SCORE1 -= 1
+#    else:
+#        setup.SCORE2 -= 1
+
+def deleteSquare(player, square, sound, sound2):
+#    verify = (square.get_cor() == player)
+    #print verify
+    #if verify:
+    #    playSoundAndRemoveSquare(sound, square)
+    #    addScore(player)
+    #else:
+    #    playSoundAndRemoveSquare(sound2, square)
+    #    removeScore(player)
+        '''if player == 0:
+            setup.SCORE1 -= 1
+        else:
+            setup.SCORE2 -= 1
+        '''
+    '''if ply1 == True or ply2 == True:
         sound.play()
         square.position[1] += 40
-        setup.SCORE1 += 1
-    else:
+
+        if ply1 == True:
+            setup.SCORE1 += 1
+        if ply2 == True:
+            setup.SCORE2 += 1
+
+    if ply1 == False or ply2 == False:
         sound2.play()
         square.position[1] += 40
-        setup.SCORE1 -= 1
 
+        if ply1 == False:
+            setup.SCORE1 -= 1
+        if ply2 == False:
+            setup.SCORE2 -= 1
+    '''
 # Deixar legivel
 def quadrado_collissao(lista_square, screen, player1, player2):
     sound, sound2 = inicializar_som()
-
     # Criar funcao e modificar nome de variaveis
     for qua in lista_square:
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
-            deleteSquare(qua, sound, sound2)
+            deleteSquare(0, qua, sound, sound2)
 
         if colissao_quadrados(player2, quadrado):
-            deleteSquare(qua, sound, sound2)
+            deleteSquare(1, qua, sound, sound2)
 
 def incrementTime():
     setup.TIME += 1
