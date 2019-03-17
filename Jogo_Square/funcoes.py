@@ -87,7 +87,7 @@ def removeSquare(square):
 
 def playSoundAndRemoveSquare(sound, square):
     playSound(sound)
-#    removeSquare(square)
+    removeSquare(square)
 
 #def addScore(player):
 #    if player == 0:
