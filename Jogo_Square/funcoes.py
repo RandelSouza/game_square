@@ -107,7 +107,7 @@ def deleteSquare(player, square, sound, sound2):
     if verify:
         playSoundAndRemoveSquare(sound, square)
         addScore(player)
-    #else:
+    else:
     #    playSoundAndRemoveSquare(sound2, square)
     #    removeScore(player)
         '''if player == 0:
