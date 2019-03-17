@@ -79,7 +79,7 @@ def inicializar_som():
     sound2.set_volume(0.1)
     return sound, sound2
 
-#def playSound(sound):
+def playSound(sound):
 #    sound.play()
 
 #def removeSquare(square):
