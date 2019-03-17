@@ -83,7 +83,7 @@ def playSound(sound):
     sound.play()
 
 def removeSquare(square):
-#    square.position[1] += 40
+    square.position[1] += 40
 
 #def playSoundAndRemoveSquare(sound, square):
 #    playSound(sound)
