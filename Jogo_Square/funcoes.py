@@ -89,7 +89,7 @@ def playSoundAndRemoveSquare(sound, square):
     playSound(sound)
     removeSquare(square)
 
-#def addScore(player):
+def addScore(player):
 #    if player == 0:
 #        setup.SCORE1 += 1
 #    else:
