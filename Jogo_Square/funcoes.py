@@ -110,8 +110,7 @@ def deleteSquare(player, square, sound, sound2):
     else:
         playSoundAndRemoveSquare(sound2, square)
         removeScore(player)
-        ''
-        '''
+        
     '''if ply1 == True or ply2 == True:
         sound.play()
         square.position[1] += 40
