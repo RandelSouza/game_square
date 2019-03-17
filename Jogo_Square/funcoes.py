@@ -85,7 +85,7 @@ def playSound(sound):
 def removeSquare(square):
     square.position[1] += 40
 
-#def playSoundAndRemoveSquare(sound, square):
+def playSoundAndRemoveSquare(sound, square):
 #    playSound(sound)
 #    removeSquare(square)
 
