@@ -26,4 +26,4 @@ aplicação **main.py** em outro terminal: </br>
 <img src="https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameRun.png">
 <img src="https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameRun2.png">
 
-<img style="-webkit-user-select: none;cursor: zoom-in;" src="https://randelsouza.github.io/game_square/Jogo_Square/readmeImage/gameRun.png" width="365" height="170">
+<img src="https://randelsouza.github.io/game_square/Jogo_Square/readmeImage/gameRun.png">
