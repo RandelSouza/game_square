@@ -24,4 +24,5 @@ aplicação **main.py** em outro terminal: </br>
 
 * Imagens do jogo em execução:
 <img src="https://randelsouza.github.io/game_square/Jogo_Square/readmeImage/gameRun.png">
-![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gameRun2.png)
+<img src="https://randelsouza.github.io/game_square/Jogo_Square/readmeImage/gameRun2.png">
+
