@@ -23,6 +23,6 @@ aplicação **main.py** em outro terminal: </br>
 ![alt text](https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameSquareTerminal.png)
 
 * Imagens do jogo em execução:
-<img src="https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameRun.png">
+<img src="https://raw.githubusercontent.com/RandelSouza/game_square/master/readmeImage/gameRun.png">
 <img src="https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameRun2.png">
 
