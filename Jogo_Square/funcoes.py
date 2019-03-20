@@ -172,7 +172,7 @@ def exit_game():
             exit()
 
 def init():
-    pass
+    
 def iniciar():
     pygame.init()
     pygame.mixer.init()
