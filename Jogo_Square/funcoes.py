@@ -141,7 +141,7 @@ def atualizarQuadrados(quadrados):
         i.position[1] += 1
     return quadrados
 
-def 
+def renderFunte()
 # Criar funcao para renderizar fonte
 def desenhar_t1_t2_tm(screen):
     time = setup.fuente.render(str(setup.count4), 100, (0, 0, 0))
