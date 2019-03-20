@@ -11,7 +11,7 @@ O jogo não está completo e apresenta diversas inconsistencias e bugs!
 * Para baixar o Game Square pelo terminal: </br>
 `git clone https://github.com/RandelSouza/game_square.git`
 * Para baixar pelo site, na tela inicial do repositorio clique em **Download ZIP**: </br>
-![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gitgamesquare.png)
+![alt text](https://github.com/RandelSouza/game_square/blob/master/readmeImage/gitgamesquare.png)
 * Entrando na pasta onde reside a aplicação (main) e o servidor: </br>
 `cd game_square/Jogo_Square/`
 * Antes de executar as aplicações, é necessário inicializar o código servidor: </br>
@@ -20,9 +20,8 @@ O jogo não está completo e apresenta diversas inconsistencias e bugs!
 aplicação **main.py** em outro terminal: </br>
 `python main.py`</br>
 **obs**: *será necessário executar o código acima (da aplicação) em dois terminais*
-![alt text](https://github.com/RandelSouza/game_square/blob/master/Jogo_Square/readmeImage/gameSquareTerminal.png)
+![alt text](https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameSquareTerminal.png)
 
 * Imagens do jogo em execução:
-<img src="https://randelsouza.github.io/game_square/Jogo_Square/readmeImage/gameRun.png">
-<img src="https://randelsouza.github.io/game_square/Jogo_Square/readmeImage/gameRun2.png">
-
+<img src="https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameRun.png">
+<img src="https://github.com/RandelSouza/game_square/blob/master/readmeImage/gameRun2.png">
