@@ -162,7 +162,7 @@ def movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2)
     return player1, player2
 
 def criar_jogadores():
-    jogador1 = criar_jogador(0)
+    criar_jogador(0)
     jogador2 = criar_jogador(1)
     return jogador1, jogador2
 
@@ -182,7 +182,7 @@ def musicConfig():
 
 def iniciar():
     initPygameAndMixer()
-    musicConfig()        
+    musicConfig()
     background = pygame.image.load("Imagens/pyramid.jpg")
     backgroundRect = background.get_rect()
     screen = pygame.display.set_mode((setup.LARGURA, setup.ALTURA), 0, 32)
