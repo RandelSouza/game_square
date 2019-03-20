@@ -176,10 +176,10 @@ def initPygameAndMixer():
     pygame.mixer.init()
 
 def musicConfig():
-    
+    pygame.mixer.music.load("boom_pack/wind.mp3")
 def iniciar():
     initPygameAndMixer()
-    pygame.mixer.music.load("boom_pack/wind.mp3")
+
     pygame.mixer.music.play(-1, 0.0)
     pygame.mixer.music.set_volume(0.2)
     background = pygame.image.load("Imagens/pyramid.jpg")
