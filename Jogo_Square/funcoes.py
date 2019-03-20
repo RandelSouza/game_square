@@ -175,6 +175,8 @@ def initPygameAndMixer():
     pygame.init()
     pygame.mixer.init()
 
+def musicConfig():
+    pass
 def iniciar():
     initPygameAndMixer()
     pygame.mixer.music.load("boom_pack/wind.mp3")
