@@ -111,6 +111,7 @@ def deleteSquare(player, square, sound, sound2):
 
 def quadrado_collissao(lista_square, screen, player1, player2):
     sound, sound2 = inicializar_som()
+
     for qua in lista_square:
         quadrado = desenha_quadrados(qua, screen)
         if colissao_quadrados(player1, quadrado):
@@ -170,6 +171,8 @@ def exit_game():
         if evento.type == QUIT:
             exit()
 
+def init():
+    pass
 def iniciar():
     pygame.init()
     pygame.mixer.init()
