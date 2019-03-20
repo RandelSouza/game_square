@@ -182,8 +182,7 @@ def musicConfig():
 
 def iniciar():
     initPygameAndMixer()
-    musicConfig()
-    
+    musicConfig()        
     background = pygame.image.load("Imagens/pyramid.jpg")
     backgroundRect = background.get_rect()
     screen = pygame.display.set_mode((setup.LARGURA, setup.ALTURA), 0, 32)
