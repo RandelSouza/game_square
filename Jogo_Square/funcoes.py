@@ -43,7 +43,6 @@ def movimentar_squares2(quadrado1, quadrado2,  tecla_pressionada, velocidade):
     cliente.send_message(pickle.dumps(quadrado2.position))
     quadrado1.position = pickle.loads(cliente.recieve_message())
 
-# Deixar mais legivel
 def criar_quadrados(quantidade):
     quadrados = []
 
