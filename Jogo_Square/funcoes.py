@@ -134,6 +134,9 @@ def time_jogo():
     incrementTime()
     return transformTimeSeconds()
 
+def createSquare():
+    
+
 def atualizarQuadrados(quadrados):
     for i in quadrados:
         if i.position[1] == setup.ALTURA + 800:
