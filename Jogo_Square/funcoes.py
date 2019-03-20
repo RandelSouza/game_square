@@ -163,7 +163,7 @@ def movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2)
 
 def criar_jogadores():
     criar_jogador(0)
-    jogador2 = criar_jogador(1)
+    criar_jogador(1)
     return jogador1, jogador2
 
 def exit_game():
