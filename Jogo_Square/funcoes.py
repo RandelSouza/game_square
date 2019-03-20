@@ -140,7 +140,7 @@ def createSquare():
 def atualizarQuadrados(quadrados):
     for i in quadrados:
         if i.position[1] == setup.ALTURA + 800:
-            quadrados = criar_quadrados(random.randint(1, 60))
+            quadrados = createSquare()#criar_quadrados(random.randint(1, 60))
         i.position[1] += 1
     return quadrados
 
