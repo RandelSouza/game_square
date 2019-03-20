@@ -171,11 +171,11 @@ def exit_game():
         if evento.type == QUIT:
             exit()
 
-def init():
-    
-def iniciar():
+def initPygameAndMixer():
     pygame.init()
     pygame.mixer.init()
+
+def iniciar():
     pygame.mixer.music.load("boom_pack/wind.mp3")
     pygame.mixer.music.play(-1, 0.0)
     pygame.mixer.music.set_volume(0.2)
