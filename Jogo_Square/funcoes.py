@@ -161,8 +161,8 @@ def movimentar_desenhar_jogadores(screen, tecla_pressionada, jogador1, jogador2)
     player2 = desenhar_jogador(jogador2, screen)
     return player1, player2
 
-def criar_jogadores():    
-    return criar_jogador(0), jogador2
+def criar_jogadores():
+    return criar_jogador(0), criar_jogador(1)
 
 def exit_game():
     for evento in pygame.event.get():
