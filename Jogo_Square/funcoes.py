@@ -135,7 +135,7 @@ def time_jogo():
     return transformTimeSeconds()
 
 def createSquare():
-    
+    return 
 
 def atualizarQuadrados(quadrados):
     for i in quadrados:
